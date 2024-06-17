@@ -18,7 +18,7 @@
             <div class="carousel-caption">
 			  <h1>American Asphalt Services</h1>
 			  <p class="banner-ctn">Our full service concrete and asphalt services include all paving, sealcoating, asphalt repair, pothole repair, striping, and snow removal.</p>
-			  <a href="" class="banner-btn">Request A FREE Estimate</a>
+			  <a href="{{route('contact_us')}}" class="banner-btn">Contact Us Now</a>
             </div>
           </div> 
 		  
@@ -117,7 +117,7 @@
 		  </div>
 		  <div class="service-box-ctn">
   <h3>Residential</h3>
-  <p>Are you a homeowner? American  Asphalt Services offers residential</p>
+  <p>Are you a homeowner? American Asphalt Services offers residential asphalt services across the front range.</p>
   <a href="">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 		  </div>
 		  </div>
@@ -129,7 +129,7 @@
 		  </div>
 		  <div class="service-box-ctn">
   <h3>Commercial</h3>
-  <p>Are you a homeowner? American  Asphalt Services offers residential</p>
+  <p>Calling all business owners! American Asphalt Services offers commercial asphalt services in Colorado.</p>
   <a href="">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 		  </div>
 		  </div>
@@ -141,7 +141,7 @@
 		  </div>
 		  <div class="service-box-ctn">
   <h3>Concrete</h3>
-  <p>Are you a homeowner? American  Asphalt Services offers residential</p>
+  <p>We offer concrete services including curbs, gutters, driveways, walkways, sidewalks, patios, & stained concrete.</p>
   <a href="">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 		  </div>
 		  </div>
@@ -153,7 +153,7 @@
 		  </div>
 		  <div class="service-box-ctn">
   <h3>Asphalt Paving</h3>
-  <p>Are you a homeowner? American  Asphalt Services offers residential</p>
+  <p>We are your one-stop shop for any asphalt paving or repair needs. We provide nothing but the best asphalt services in Colorado Springs.</p>
   <a href="">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 		  </div>
 		  </div>
@@ -165,7 +165,7 @@
 		  </div>
 		  <div class="service-box-ctn">
   <h3>Snow Removal</h3>
-  <p>Are you a homeowner? American  Asphalt Services offers residential</p>
+  <p>When winter weather strikes in Colorado Springs, reliable snow removal is essential for residential and commercial properties.</p>
   <a href="">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 		  </div>
 		  </div>
@@ -177,7 +177,7 @@
 		  </div>
 		  <div class="service-box-ctn">
   <h3>Patching & Crack Filling</h3>
-  <p>Are you a homeowner? American  Asphalt Services offers residential</p>
+  <p>American Asphalt Services is your trusted Colorado asphalt services partner in maintaining the integrity and longevity of your asphalt surfaces. </p>
   <a href="">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 		  </div>
 		  </div>
@@ -229,13 +229,13 @@
 		<div class="col-lg-5 align-self-center">
 		<p class="head-caption">WHY CHOOSE US</p>
 		<h2>Few Reasons to Choose Our Company</h2>
-		<p>It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point of using lorem the is Ipsum less normal distribution of letters.</p>
+		<p>We offer unparalleled expertise, competitive pricing, and exceptional customer service for all your concrete and asphalt needs. Trust us for reliable, high-quality solutions delivered on time and within budget.</p>
 		<ul class="wel-list">
-		<li>Lorem ipsum dolor sit amet, citetur adipiscing elit.</li>
-		<li>Curabitur auctor nibh quis ante venenatis semper.</li>
-		<li>Maecenas posuere quam sit amet justo lobortis,</li>
-		<li>Donec vitae lectus sit amet tellus maximus pharetra </li>
-		<li>Curabitur maximus mauris a felis laoreet efficitur.</li>
+		<li>Experienced professionals ensure top-notch quality.</li>
+		<li>Use only high-quality materials.</li>
+		<li>Competitive pricing without compromising quality.</li>
+		<li>Guaranteed on-time project completion.</li>
+		<li>Exceptional customer service and support.</li>
 		</ul>
 		</div>
 		
@@ -314,7 +314,7 @@
 		<div class="testimonial-box">
 		<p class="head-caption">Testimonials</p>
 		<h2>CLient feedback</h2>
-		<p>It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point of using lorem the is Ipsum less normal distribution of letters.</p>
+		<p>Check out what people say about us! Our clients commend our professionalism, reliability, and superior results. Their positive feedback highlights our dedication to delivering top-tier services every time.</p>
 		<div id="demo-pranab">
         <div id="owl-testimonial" class="owl-carousel owl-theme">     
           <div class="item">

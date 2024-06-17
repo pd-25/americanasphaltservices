@@ -57,13 +57,13 @@
 <div id="logo-section"> 
 <div class="container"> 
  <div class="row justify-content-between">
- <div class="col-lg-6">
+ <div class="col-lg-6 col-4">
  <div class="logo-left">
   <img src="{{asset('frontend/images/logo.png')}}"class="img-fluid">
 </div>
 </div>
 
-<div class="col-lg-3">
+<div class="col-lg-3 col-8">
  <div class="logo-right">
  <div class="media">
  <img src="{{asset('frontend/images/phone-icon.png')}}"class="align-self-center mr-2">
@@ -201,7 +201,7 @@
 
 @yield('content')
 
-<a href="https://api.whatsapp.com/send?phone=9876543210&text=Hello..." class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=7192859736&text=Hello..." class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>
     
@@ -211,7 +211,7 @@
                     <div class="row">			
                         <div class="col-lg-4 fst-footer">
                         <img src="{{asset('frontend/images/footer-logo.png')}}"class="img-fluid mb-3">
-                            <p class="mb-3">Lorem ipsum dolor sitdmet, consectetur adipiscing elit. Ut vitae ligula justo cras quam ipsum, faucibus non faucibus non, eleifend non risus. </p>						
+                            <p class="mb-3">American Asphalt Services, based in Colorado Springs, boasts over 30 years of expertise in the asphalt industry. </p>						
                         </div>
                         
                         <div class="col-lg-2 snd-footer">
