@@ -51,6 +51,6 @@
   
   
   
-  @include('Frontend.Layout.contactinfo')
-
+  
+    @include('Frontend.Layout.contactinfo')
 @endsection

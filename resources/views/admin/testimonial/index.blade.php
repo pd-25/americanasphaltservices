@@ -57,12 +57,12 @@
                                     </a>
                                     
 
-                                    <form method="POST" action="{{ route('testimonials.destroy', $item->slug) }}"
+                                    <form method="POST" onsubmit="return confirm('Are you sure you want to delete this image?');" action="{{ route('testimonials.destroy', $item->slug) }} "
                                         class="action-icon delete-form">
                                         @csrf
                                         <input name="_method" type="hidden" value="DELETE">
                                         <button type="submit"
-                                            class="btn btn-outline-danger btn-xs delete-icon show_confirm"
+                                            class="btn btn-outline-danger btn-xs delete-icon "
                                             data-toggle="tooltip" title='Delete'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">

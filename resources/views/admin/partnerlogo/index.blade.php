@@ -26,34 +26,33 @@
 
         <div class="app-card-body p-3 p-lg-4">
             <div class="table-responsive">
-                <table class="table table-borderless mb-0">
+                <table class="table table-borderless mb-0 ">
                     <thead>
                         <tr>
-                            <th class="meta">Logo</th>
+                            <th class="meta">Images</th>
                             <th class="meta ">Created at</th>
                             <th class="meta ">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @foreach ($projects as $item) --}}
+                        @foreach ($partner_logos as $item)
                             <tr>
-                                <td>Test</td>
-                                <td class="">43.432034</td>
-                                <td class="action-icons">
-                                    <a href="{{ route('partner-logo.edit', 1) }}" class="m-3"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path
-                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                            <path fill-rule="evenodd"
-                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
-                                        </svg></a>
-                                    <form method="POST" action="{{ route('partner-logo.destroy', 1) }}"
-                                        class="action-icon">
+                                <td class="align-self-center"> 
+                                    @if (isset($item) && !empty($item->image) && File::exists(public_path('storage/partner_logos/' . $item->image)))
+                                    <img height="103" width="127"
+                                        src="{{ asset('storage/partner_logos/' . $item->image) }}" alt="">
+                                @else
+                                    <img src="{{ asset('User/assets/img/the-japanese-bridge-claude-monet.jpg') }}">
+                                @endif</td>
+                                <td class="align-self-center">{{$item->created_at}}</td>
+                                <td class="action-icons align-self-center">
+                                
+                                        <form method="POST" action="{{ route('partner-logo.destroy', $item->id) }}" class="action-icon" onsubmit="return confirm('Are you sure you want to delete this image?');">
+
                                         @csrf
                                         <input name="_method" type="hidden" value="DELETE">
                                         <button type="submit"
-                                            class="btn btn-outline-danger btn-xs delete-icon show_confirm"
+                                            class="btn btn-outline-danger btn-xs delete-icon"
                                             data-toggle="tooltip" title='Delete'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
@@ -66,7 +65,7 @@
                                     </form>
                                 </td>
                             </tr>
-                        {{-- @endforeach --}}
+                        @endforeach
 
                     </tbody>
                 </table>

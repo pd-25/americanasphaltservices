@@ -1,4 +1,118 @@
 @media all and (max-width:992px) {
+    #contact-section .row {
+  border-radius: 0;
+}
+    .address-box {
+  padding: 30px;
+    }
+    .inn-serv-box {
+  margin-bottom: 20px;
+}
+    h2 {
+  font-size: 27px;
+  line-height:27px;
+    }
+    #inn-banner-slider .carousel-caption h1 {
+  font-size: 26px;
+  line-height:30px;
+}
+    #inn-banner-slider .carousel-item .carousel-caption {
+  bottom: 40px !important;
+  padding: 0;
+  left: 3% !important;
+right: 3% !important;
+}
+ #inn-banner-slider .carousel-item {
+  height: 15vh;
+  min-height: 150px;
+}
+    #main_footer h4 {
+  margin-top: 30px;
+}
+    .fst-footer img {
+        margin:0 auto;
+    }
+    #main_footer {
+  text-align: center;
+}
+    .footer-contact {
+  font-size: 14px;
+  font-weight: 500;
+}
+    .testimonial-ctn-box .fa-star {
+  font-size: 12px;
+  padding-right: 1px;
+}
+    .testimonial-ctn-box {
+  margin: 0;
+  padding: 30px 20px;
+}
+    .testimonial-box {
+  padding: 30px 25px;
+}
+    .contact-box-left {
+  margin: 20px;
+  padding: 30px 25px;
+}
+    .call-box h5 a {
+  font-size: 26px;
+    }
+    .call-box {
+  margin-left: 0;
+}
+    .contact-ctn-box p {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+    .contact-ctn-box h2 {
+  font-size: 30px;
+    }
+    #contact-section .row {
+  padding: 30px 20px;
+    }
+    .contact-ctn-box {
+  border-right: 0;
+}
+    #welcome-section .media h5 {
+  text-align: left;
+}
+    #welcome-section .media h5 br {
+  display:none;
+}
+    .hm-about-ctn-box .media {
+        margin-bottom:15px;
+    }
+    .carousel-caption {
+  bottom: 0px;
+    }
+    .menu-btn {
+  color: #ffffff !important;
+  text-align: center !important;
+    }
+    .header .menu > ul > li > a {
+        color:#000000;
+        text-align: left;
+    }
+    .logo-right .media p {
+  font-size: 10px;
+  letter-spacing:0;
+    }
+    .logo-right {
+  margin-top: 5px;
+}
+    .logo-right .media h5 {
+  font-size: 22px;
+    }
+    .th-left {
+        text-align: center;
+    }
+    .th-left a, .th-right a {
+  padding: 14px 0 0px;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+    }
 .header-menu {
 	text-align: right;
 }
@@ -43,20 +157,12 @@
   padding:10px 20px;
 }
 .carousel-caption h1 {
-  font-size: 20px;
+  font-size: 16px;
   line-height:20px;
   margin-bottom:0;
 }
-.carousel-caption h3 {
-  font-size: 16px;
-  margin-bottom:0;
-}
-.carousel-caption h4 {
-	font-size: 14px;
-	margin-bottom:0;
-}
-.carousel-caption p {
-	font-size: 10px;
+.carousel-caption p.banner-ctn {
+	font-size: 12px;
 	line-height:15px;
 	margin-bottom:5px;
 }

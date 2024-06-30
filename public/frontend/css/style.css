@@ -424,6 +424,8 @@ input[type="datetime-local"] {
 }
 .testimonial-box .media img.pro-img {
 	border-radius:120px;
+	width: 80px;
+height: 80px;
 }
 .testimonial-ctn-box {
 	background:#ffffff;

@@ -8,29 +8,23 @@
                         @if (Session::has('msg'))
                             <p class="alert alert-info">{{ Session::get('msg') }}</p>
                         @endif
-                        <form class="settings-form" action="{{ route('partner-logo.store') }}" method="POST"
-                            enctype="multipart/form-data">
-                            @method('POST')
+                        <form class="settings-form" action="{{ route('partner-logo.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
-                            <div class="mb-3">
-                                <label for="setting-input-2" class="form-label">Project Name</label>
-                                <input type="text" name="name" class="form-control" id="setting-input-2" required>
-                            </div>
+                            
                             <div id="image-all">
                                 <label for="setting-input-3" class="form-label">Image</label>
                                 <div class="mb-3 image-field">
-                                    <input type="file" name="image[]" class="form-control" required>
-                                    {{-- <button type="button" class="btn btn-danger btn-sm remove-image mt-2">Remove</button> --}}
+                                    <input type="file" name="image[]" class="form-control" required multiple>
                                 </div>
                             </div>
                             <div class="mb-3 float-end">
-                                <button type="button" class="btn btn-sm btn-success" onclick="addMoreImage()">+ Add more
-                                    image</button>
+                                <button type="button" class="btn btn-sm btn-success" onclick="addMoreImage()">+ Add more image</button>
                             </div>
                             <div class="mt-5">
                                 <button type="submit" class="btn app-btn-primary">Save</button>
                             </div>
                         </form>
+                        
                     </div><!--//app-card-body-->
                 </div>
             </div><!--//inner-->

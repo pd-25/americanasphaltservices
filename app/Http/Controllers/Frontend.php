@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Offer;
 use App\Mail\ContactUsMail;
 use App\Models\ContactUs;
 use App\Models\Testimonial;
@@ -74,5 +74,11 @@ class Frontend extends Controller
     public function snow_removal()
     {
         return view('Frontend.services.snow_removal');
+    }
+
+    public function show()
+    {
+        $contactInfo = offer::first();
+        return view('Frontend.Layout.contactinfo',compact('contactInfo'));
     }
 }

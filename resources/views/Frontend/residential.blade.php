@@ -5,7 +5,7 @@
     <div data-ride="carousel" class="carousel slide" id="carouselExampleIndicators">
       <div role="listbox" class="carousel-inner">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div style="background-image: url('{{asset('frontend/images/inner-banner.jpg')}}')" class="carousel-item active">
+        <div style="background-image: url('{{asset('frontend/images/res-as-banner.jpg')}}')" class="carousel-item active">
         <div class="carousel-caption">
             <h1 class="mb-2">Residential Service</h1>
             </div>
@@ -123,6 +123,6 @@
   
   
   
-  @include('Frontend.Layout.contactinfo')
+   @include('Frontend.Layout.contactinfo')
   
 @endsection

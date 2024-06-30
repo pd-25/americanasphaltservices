@@ -77,7 +77,18 @@
                                 <img src="{{ asset('frontend/images/phone-icon.png') }}"class="align-self-center mr-2">
                                 <div class="media-body ">
                                     <p>Call Our Customer Service At</p>
-                                    <h5>719-285-9736</h5>
+                                    @php
+    // Original phone number (assuming it's stored as a continuous string)
+    $originalNumber = $contactInfo->number;
+    
+    // Format the phone number
+    $formattedNumber = substr($originalNumber, 0, 3) . '-' . 
+                       substr($originalNumber, 3, 3) . '-' . 
+                       substr($originalNumber, 6);
+@endphp
+
+<h5><a style="color: black" href="tel:{{ $originalNumber }}">{{ $formattedNumber }}</a></h5>
+                                   
                                 </div>
                             </div>
 
@@ -290,7 +301,17 @@
                         <h4>Connect with Us</h4>
                         <p><i class="fa fa-map-marker" aria-hidden="true"></i> 10467 Hoke Run Drive, Colorado Springs,
                             CO 80925</p>
-                        <p class="footer-contact mb-0"><i class="fa fa-phone" aria-hidden="true"></i> 719-285-9736
+                            @php
+    // Original phone number (assuming it's stored as a continuous string)
+    $originalNumber = $contactInfo->number;
+    
+    // Format the phone number
+    $formattedNumber = substr($originalNumber, 0, 3) . '-' . 
+                       substr($originalNumber, 3, 3) . '-' . 
+                       substr($originalNumber, 6);
+@endphp
+
+<p class="footer-contact mb-0"><i class="fa fa-phone" aria-hidden="true"></i><a style="color: white" href="tel:{{ $originalNumber }}">{{ $formattedNumber }}</a>
                         </p>
                         <p class="footer-contact mb-0"><i class="fa fa-envelope" aria-hidden="true"></i>
                             info@americanasphaltservices.com</p>
